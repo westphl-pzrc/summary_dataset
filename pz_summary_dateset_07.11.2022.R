@@ -787,4 +787,6 @@ pz_summary_dataset$pct_hs_or_equiv = signif(pz_summary_dataset$pct_hs_or_equiv, 
 pz_summary_dataset$pct_some_college = signif(pz_summary_dataset$pct_some_college, digits = 2)
 pz_summary_dataset$pct_bach_plus = signif(pz_summary_dataset$pct_bach_plus, digits = 2)
 
+row.names(pz_summary_dataset) = c("Philadelphia", "Promise Zone")
+
 write.csv(pz_summary_dataset, "pz_summary_dataset_07.12.2022.csv")
