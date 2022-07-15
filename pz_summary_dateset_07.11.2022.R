@@ -402,6 +402,9 @@ phl_demos = st_transform(phl_demos, crs = st_crs("EPSG:4326"))
 
 #########################SEPARATE VARIABLES BY TYPE#######################
 
+#Once the 2020 US Census summary file 1 is available, you can insert the population weights code here
+#to more precisely estiamte spatially extensive varibles.
+
 #Extensive variables
 phl_demos_ext = phl_demos |>
   dplyr::select(tot_pop,
